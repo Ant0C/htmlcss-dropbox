@@ -51,3 +51,47 @@ li > a{
 /*** Main ***/
 
 /* Hero */
+
+.hero > .row-hero{
+    display: flex;
+    justify-content: center;
+}
+
+.hero{
+    padding: 97px 370px 0px 370px;
+    background-color: #B4D0E7;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+.col-hero-1{
+    flex-basis: 100%;
+    padding-bottom: 57px;
+}
+
+.col-hero-2{
+    flex-basis: calc(100%(4/12));
+    position: relative;
+}
+
+.col-hero-3{
+    flex-basis: calc(100%(8/12));
+}
+
+.col-hero-2 > div{
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+
+.arrow{
+    font-size: 45px;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+}
+
+/* Card Section */
+
