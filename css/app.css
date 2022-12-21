@@ -51,22 +51,23 @@ li > a{
 
 /*** Main ***/
 
-/* Hero */
+/*** Hero ***/
 
-.hero > .row-hero{
-    display: flex;
-    justify-content: center;
-}
+/* Dimensioni container hero */
 
 .hero{
     padding: 97px 370px 0px 370px;
     background-color: #B4D0E7;
 }
 
-h1{
-    text-align: center;
-    font-size: 50px;
+/* Flex delle righe hero  */
+
+.hero > .row-hero{
+    display: flex;
+    justify-content: center;
 }
+
+/* Dimensioni colonne hero*/
 
 .col-hero-1{
     flex-basis: 100%;
@@ -82,10 +83,21 @@ h1{
     flex-basis: calc(100%*(8/12));
 }
 
+/* dimesioni top e bottom del paragrafo centrale */
+
 .col-hero-2 > div{
     margin-top: 36px;
     margin-bottom: 36px;
 }
+
+/* Regole css titolo hero */
+
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+/* Regole css freccia */
 
 .arrow{
     font-size: 45px;
@@ -94,20 +106,18 @@ h1{
     left: 0px;
 }
 
-/* Card Section */
+/*** Card Section ***/
+
+/*** Card 1-2-3 ***/
+
+/* Dimensioni container sezione card */
 
 .container-card{
     padding: 80px 380px 65px 380px;
     margin-top: 79px;
 }
 
-.title-card,.col-button{
-    margin-bottom: 57px;
-}
-
-.row-card-title{
-    display: flex;
-}
+/* Regole flex di tutte le righe sezione card */
 
 .row-card-title,.row-card-button{
     display: flex;
@@ -118,41 +128,40 @@ h1{
     display: flex;
 }
 
+/* Dimensioni colonne sezione card */
+
 .col-card{
-    flex-basis: calc(100%(4/12));
+    flex-basis: calc(100%*(4/12));
     border-left: solid 2px gray;
     border-right: solid 2px gray;
     border-bottom: solid 2px gray;
-}
-
-.col-bottom{
-    flex-basis: calc(100%*(8/12));
-}
-
-.col-button-bottom{
-    padding: 39px 26px 39px 26px;
-    flex-basis: calc(100%*(4/12));
 }
 
 .col-button{
     flex-basis: calc(100%*(4/12));
 }
 
+/* Margine basso del titolo sezione card e spazio tra bottoni*/
+
+.title-card,.col-button{
+    margin-bottom: 57px;
+}
+
+.radio{
+    margin-left: 50px;
+}
+
+/* Margini destro e sinistro card centrale */
+
 .col-card:nth-child(2){
     margin-left: 25px;
     margin-right: 25px;
 }
 
-.pack{
+/* Font size titolo pachetto */
+
+.title-pack{
     font-size: 23px;
-}
-
-.price{
-    font-size: 17px;
-}
-
-.check{
-    color: blue;
 }
 
 .row-card .icon{
@@ -162,13 +171,29 @@ h1{
     border-bottom: solid 2px gray;
 }
 
+/* Font size prezzo e titolo sezione card*/
+
+.price{
+    font-size: 17px;
+}
+
 h2{
     font-size: 40px;
 }
 
+/* Colore spunta */
+
+.check{
+    color: blue;
+}
+
+/* Margine interno ai paragrafi */
+
 .container-card li{
     margin: 38px;
 }
+
+/* Distanza tra varie sezioni della card */
 
 .space-1,.space-2,.space-3,.space-4{
     padding: 20px 26px 25px 26px;
@@ -178,14 +203,27 @@ h2{
     padding-bottom: 60px;
 }
 
+/* Regole css decoration link */
+
 .link{
     color: blue;
     text-decoration: underline;
 }
 
-.space-3:last-child{
-    border-bottom: 2px solid black;
+/*** Card numero 4 / due righe,tre colonne***/
+
+/* Dimensioni colonne card4 */
+
+.col-button-bottom{
+    padding: 39px 26px 39px 26px;
+    flex-basis: calc(100%*(4/12));
 }
+
+.col-bottom{
+    flex-basis: calc(100%*(8/12));
+}
+
+/* Riga titolo card 4 */
 
 .row-card-bottom-title{
     text-align: center;
@@ -196,9 +234,13 @@ h2{
     border-right: solid 2px gray;
 }
 
+/* Padding bottone in card 4 */
+
 .col-button-bottom .action{
     padding: 13px 25px 13px 25px;
 }
+
+/* Bordi e padding per titolo card 4 */
 
 .row-card-bottom{
     border: solid 2px gray;
@@ -213,7 +255,7 @@ h2{
 /* Section 2 */
 
 .container-section-2{
-    padding: 92px 370px 92px 370px;
+    padding: 92px 370px 85px 370px;
 }
 
 .row-section-2{
@@ -244,4 +286,40 @@ h2{
     padding: 13px 16px 13px 16px;
     margin-top: 35px;
     margin-right: 230px;
+}
+
+/* Section 3 */
+
+.container-section-3{
+    padding: 85px 380px 65px 380px;
+}
+
+.row-section-3{
+    display: flex;
+}
+
+.row-section-title{
+    display: flex;
+}
+
+.container-section-3:first-child{
+    flex-basis: 100%;
+}
+
+.col-section-3-1{
+    flex-basis: calc(100%*(4/12))
+}
+
+.col-section-3-1{
+    margin-top: 80px;
+    margin-right: 50px;
+}
+
+.col-section-3-1 li:nth-child(2){
+    margin: 30px 0px 45px 0px;
+    font-size: 30px;
+}
+
+.col-section-title h3{
+    font-size: 40px;
 }
