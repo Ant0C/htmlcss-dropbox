@@ -1,0 +1,53 @@
+
+/* General Rules */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul, li{
+    list-style-type: none;
+}
+
+/*** Header ***/
+
+/* Nav bar */
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container > .row{
+    padding: 20px;
+}
+
+.col-nav-4 > .row{
+    align-items: center;
+}
+
+li > a{
+    color: black;
+    margin: 17px 19px 17px 19px;
+}
+
+.action{
+    padding: 8px 14px;
+    color: white;
+    background-color: rgb(17, 102, 230);
+}
+
+/*** Main ***/
+
+/* Hero */
