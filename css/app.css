@@ -43,6 +43,7 @@ li > a{
 }
 
 .action{
+    text-align: center;
     padding: 8px 14px;
     color: white;
     background-color: rgb(17, 102, 230);
@@ -95,10 +96,10 @@ h1{
 
 /* Card Section */
 
-/* .container-card{
-    padding: 0px 380px 0px 380px;
+.container-card{
+    padding: 80px 380px 65px 380px;
     margin-top: 79px;
-} */
+}
 
 .title-card,.col-button{
     margin-bottom: 57px;
@@ -106,44 +107,70 @@ h1{
 
 .row-card-title{
     display: flex;
-    justify-content: center;
 }
 
 .row-card-title,.row-card-button{
     display: flex;
-    justify-content: center;
     flex-basis: 100%;
 }
 
-.row-card{
+.row-card,.row-card-bottom{
     display: flex;
 }
 
 .col-card{
     flex-basis: calc(100%(4/12));
-    border: solid 2px gray;
+    border-left: solid 2px gray;
+    border-right: solid 2px gray;
+    border-bottom: solid 2px gray;
+}
+
+.col-bottom{
+    flex-basis: calc(100%(8/12));
+}
+
+.col-button{
+    flex-basis: calc(100%(4/12));
+}
+
+.col-card:nth-child(2){
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.pack{
+    font-size: 23px;
+}
+
+.price{
+    font-size: 17px;
+}
+
+.check{
+    color: blue;
 }
 
 .icon{
     text-align: center;
-    padding: 13px 120px 13px 120;
-    border: solid 2px gray;
+    padding: 13px 120px 13px 120px;
+    border-top: solid 2px gray;
+    border-bottom: solid 2px gray;
 }
 
 h2{
-    font-size: 30px;
+    font-size: 40px;
 }
 
 li{
-    margin: 10px;
+    margin: 38px;
 }
 
 .space-1,.space-2,.space-3,.space-4{
-    padding: 39px 34px 51px 34px;
+    padding: 39px 26px 51px 26px;
 }
 
 .space-4{
-    padding-bottom: 220px;
+    padding-bottom: 60px;
 }
 
 .link{
@@ -153,4 +180,9 @@ li{
 
 .space-3:last-child{
     border-bottom: 2px solid black;
+}
+
+.row-card-bottom{
+    border: solid 2px gray;
+    margin-top: 50px;
 }
