@@ -74,12 +74,12 @@ h1{
 }
 
 .col-hero-2{
-    flex-basis: calc(100%(4/12));
+    flex-basis: calc(100%*(4/12));
     position: relative;
 }
 
 .col-hero-3{
-    flex-basis: calc(100%(8/12));
+    flex-basis: calc(100%*(8/12));
 }
 
 .col-hero-2 > div{
@@ -126,11 +126,11 @@ h1{
 }
 
 .col-bottom{
-    flex-basis: calc(100%(8/12));
+    flex-basis: calc(100%*(8/12));
 }
 
 .col-button{
-    flex-basis: calc(100%(4/12));
+    flex-basis: calc(100%*(4/12));
 }
 
 .col-card:nth-child(2){
@@ -185,4 +185,40 @@ h2{
 .row-card-bottom{
     border: solid 2px gray;
     margin-top: 50px;
+}
+
+/* Section 2 */
+
+.container-section-2{
+    padding: 92px 370px 92px 370px;
+}
+
+.row-section-2{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.col-section-1{
+    flex-basis: calc(100%*(5/12))
+}
+
+.col-section-2{
+    flex-basis: calc(100%*(7/12));
+}
+
+.col-section-1 h3{
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+.col-section-1 div{
+    padding: 55px 55px 130px 55px;
+}
+
+.col-section-1 p:last-child{
+    border: solid 2px black;
+    padding: 13px 16px 13px 16px;
+    margin-top: 35px;
+    margin-right: 230px;
 }
