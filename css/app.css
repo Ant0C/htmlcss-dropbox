@@ -95,3 +95,62 @@ h1{
 
 /* Card Section */
 
+/* .container-card{
+    padding: 0px 380px 0px 380px;
+    margin-top: 79px;
+} */
+
+.title-card,.col-button{
+    margin-bottom: 57px;
+}
+
+.row-card-title{
+    display: flex;
+    justify-content: center;
+}
+
+.row-card-title,.row-card-button{
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+}
+
+.row-card{
+    display: flex;
+}
+
+.col-card{
+    flex-basis: calc(100%(4/12));
+    border: solid 2px gray;
+}
+
+.icon{
+    text-align: center;
+    padding: 13px 120px 13px 120;
+    border: solid 2px gray;
+}
+
+h2{
+    font-size: 30px;
+}
+
+li{
+    margin: 10px;
+}
+
+.space-1,.space-2,.space-3,.space-4{
+    padding: 39px 34px 51px 34px;
+}
+
+.space-4{
+    padding-bottom: 220px;
+}
+
+.link{
+    color: blue;
+    text-decoration: underline;
+}
+
+.space-3:last-child{
+    border-bottom: 2px solid black;
+}
