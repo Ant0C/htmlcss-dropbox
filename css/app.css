@@ -47,6 +47,7 @@ nav a{
     padding: 8px 14px;
     color: white;
     background-color: rgb(17, 102, 230);
+    white-space: nowrap;
 }
 
 /*** Main ***/
@@ -296,7 +297,7 @@ h2{
     border: solid 2px black;
     padding: 13px 16px 13px 16px;
     margin-top: 35px;
-    margin-right: 230px;
+    margin-right: 180px;
 }
 
 /* Section 3 */
@@ -365,13 +366,52 @@ h2{
 
 .row-partner{
     display: flex;
-    flex-wrap: wrap;
 }
 
-.col-partner{
+.col-partner-left,.col-partner-right{
+    flex-basis: calc(100%*(2/12));
+}
+
+.col-partner-center{
     flex-basis: calc(100%*(4/12));
 }
 
-.container-partner img{
-    width: 400px;
+.container-main-partner img{
+    width: 200px;
+}
+
+/* Section prova gratuita */
+
+.container-prova-gratuita{
+    max-width: 1045px;
+    margin: 0 auto;
+}
+
+.row-prova-gratuita{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-prova-gratuita{
+    padding: 20px 20px 20px 20px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    flex-basis: calc(100%*(8/12));
+}
+
+.prova-gratuita{
+    background-color: #B4D0E7;
+}
+
+.col-prova-gratuita h3{
+    font-size: 40px;
+}
+
+.action-bottom{
+    text-align: center;
+    padding: 8px 14px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    white-space: nowrap;
 }
