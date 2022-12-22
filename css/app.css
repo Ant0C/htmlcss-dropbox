@@ -187,10 +187,15 @@ h2{
     font-size: 40px;
 }
 
-/* Colore spunta */
+/* Colore spunta e spazio da testo*/
 
 .check{
     color: blue;
+}
+
+.spazio-check{
+    display: flex;
+    gap: 5px;
 }
 
 /* Margine interno ai paragrafi */
@@ -364,20 +369,58 @@ h2{
 
 /* Section partner commerciali */
 
-.row-partner{
+.container-partner{
     display: flex;
 }
 
+.row-partner-top,.row-partner-bottom,.row-partner-center{
+    display: flex;
+    justify-content: space-around;
+}
+
 .col-partner-left,.col-partner-right{
-    flex-basis: calc(100%*(2/12));
+    flex-basis: calc(100%*(8/12));
+    flex-grow: 1;
 }
 
 .col-partner-center{
     flex-basis: calc(100%*(4/12));
 }
 
-.container-main-partner img{
-    width: 200px;
+.col-partner-left-1{
+    background-color: #A2D39B;
+}
+
+.col-partner-left-2{
+    background-color: #61082B;
+}
+
+.col-partner-left-3{
+    background-color: #0093CE;
+}
+
+.col-partner-left-4{
+    background-color: #FF1C1C;
+}
+
+.col-partner-right-1{
+    background-color: #D5001F;
+}
+
+.col-partner-right-2{
+    background-color: #B4D0E7;
+}
+
+.col-partner-right-3{
+    background-color: #0D2481;
+}
+
+.col-partner-right-4{
+    background-color: #FFD830;
+}
+
+.container-partner img{
+    padding: 20px;
 }
 
 /* Section prova gratuita */
