@@ -37,7 +37,7 @@ nav li{
     padding: 20px;
 }
 
-li > a{
+nav a{
     color: black;
     margin: 17px 19px 17px 19px;
 }
@@ -55,14 +55,18 @@ li > a{
 
 /* Dimensioni container hero */
 
+.container-hero{
+    max-width: 1256px;
+    margin: 0 auto;
+}
+
 .hero{
-    padding: 97px 370px 0px 370px;
     background-color: #B4D0E7;
 }
 
 /* Flex delle righe hero  */
 
-.hero > .row-hero{
+.container-hero > .row-hero{
     display: flex;
     justify-content: center;
 }
@@ -113,7 +117,8 @@ h1{
 /* Dimensioni container sezione card */
 
 .container-card{
-    padding: 80px 380px 65px 380px;
+    max-width: 1045px;
+    margin: 0 auto;
     margin-top: 79px;
 }
 
@@ -255,7 +260,13 @@ h2{
 /* Section 2 */
 
 .container-section-2{
-    padding: 92px 370px 85px 370px;
+    max-width: 1045px;
+    margin: 0 auto;
+}
+
+.container-section-2{
+    margin-top: 150px;
+    margin-bottom: 150px;
 }
 
 .row-section-2{
@@ -291,7 +302,8 @@ h2{
 /* Section 3 */
 
 .container-section-3{
-    padding: 85px 380px 65px 380px;
+    max-width: 1045px;
+    margin: 0 auto;
 }
 
 .row-section-3{
@@ -322,4 +334,44 @@ h2{
 
 .col-section-title h3{
     font-size: 40px;
+}
+
+/* section-4 */
+
+.container-section-4{
+    max-width: 1045px;
+    margin: 0 auto;
+}
+
+.container-section-4{
+    margin-top: 200px;
+    margin-bottom: 150px;
+}
+
+.row-section-4{
+    display: flex;
+}
+
+.col-section-4{
+    flex-basis: 100%
+}
+
+.col-section-4 h3{
+    font-size: 40px;
+    margin-bottom: 75px;
+}
+
+/* Section partner commerciali */
+
+.row-partner{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-partner{
+    flex-basis: calc(100%*(4/12));
+}
+
+.container-partner img{
+    width: 400px;
 }
